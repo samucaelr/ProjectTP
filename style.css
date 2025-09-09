@@ -9,20 +9,20 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-p,
-.headline,
-.subtitle {
-    font-size: 16px;
+p {
+    font-size: 15px;
 }
 
 .headline {
     color: #E1624F;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .subtitle {
     font-style: italic;
+    font-size: 12px;
 }
 
 .primary {
@@ -76,8 +76,10 @@ h6 {
 }
 
 img {
-    width: 1000px;
-    height: 350px;
+    width: 100%;
+    max-width: 750px;
+    height: 40%;
+    max-height: 350px;
     border-radius: 28px;
 }
 
@@ -85,4 +87,38 @@ ul {
     margin-top: 0px;
     list-style: none;
     margin-bottom: 40px;
+}
+
+@media (max-width: 430px) {
+    p {
+        font-size: 12px;
+    }
+
+    .headline {
+        color: #E1624F;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-style: italic;
+        font-size: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 12px;
+    }
 }
