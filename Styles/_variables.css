@@ -14,6 +14,8 @@
     --cor-link: #425944;
     --cor-preto: #000000;
     --cor-borda-link-ativo: #81A858;
+    --cor-cinza-claro: #d9d9d9;
+    --cor-cinza-medio: #696969;
 }
 
 /* Paleta de cores para Ciudad del Este */
@@ -25,6 +27,8 @@ body.tema-cde {
     --cor-link: #D4793B;
     --cor-preto: #000000;
     --cor-borda-link-ativo: #D4793B;
+    --cor-cinza-claro: #d9d9d9;
+    --cor-cinza-medio: #696969;
 }
 
 /* Paleta de cores para Foz do Iguaçu */
@@ -36,4 +40,6 @@ body.tema-foz {
     --cor-link: #3B72A4;
     --cor-preto: #000000;
     --cor-borda-link-ativo: #3B72A4;
+    --cor-cinza-claro: #d9d9d9;
+    --cor-cinza-medio: #696969;
 }

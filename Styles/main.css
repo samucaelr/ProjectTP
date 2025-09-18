@@ -1,7 +1,8 @@
 /* main.css */
+
 section {
     opacity: 1;
-    max-height: 2000px;
+    max-height: 5000px;
     overflow: hidden;
     transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
 }

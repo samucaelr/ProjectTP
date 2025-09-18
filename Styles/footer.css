@@ -1,4 +1,5 @@
-/* Estilos para o rodapé */
+/* footer.css */
+
 footer {
     background-color: var(--cor-fundo);
     color: var(--cor-texto-secundaria);
@@ -47,7 +48,6 @@ footer {
     border-radius: 50%;
 }
 
-/* Responsividade para o rodapé */
 @media (min-width: 768px) {
     .footer-content {
         flex-direction: row;
