@@ -1,12 +1,13 @@
+// script.js
+
 document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('header .links a');
     var secoes = document.querySelectorAll('main section');
 
-    // Define a classe do body inicial
-    document.body.classList.add('tema-her');
-    
-    // Destaque o primeiro link ao carregar a página
+    // Inicializa a primeira seção como visível e o body com o tema de Hernandarias
     document.querySelector('a[href="#her"]').classList.add('active');
+    document.querySelector('#her').classList.add('visivel');
+    document.body.classList.add('tema-her');
 
     links.forEach(function(link) {
         link.addEventListener('click', function(event) {
@@ -15,31 +16,30 @@ document.addEventListener('DOMContentLoaded', function() {
             var idAlvo = link.getAttribute('href');
             var secaoAlvo = document.querySelector(idAlvo);
 
-            // Remove a classe 'active' de todos os links
+            // Remove a classe 'active' de todos os links e a classe 'visivel' de todas as seções
             links.forEach(function(l) {
                 l.classList.remove('active');
+            });
+            secoes.forEach(function(secao) {
+                secao.classList.remove('visivel');
             });
             
             // Adiciona a classe 'active' ao link que foi clicado
             link.classList.add('active');
 
-            // 1. Remove as classes de tema existentes do body
+            // Adiciona a nova classe de tema ao body
             document.body.classList.remove('tema-her', 'tema-cde', 'tema-foz');
-
-            // 2. Adiciona a nova classe de tema ao body
             var tema = 'tema-' + idAlvo.substring(1);
             document.body.classList.add(tema);
 
-            // Adiciona a classe 'escondido' a todas as seções
-            secoes.forEach(function(secao) {
-                secao.classList.add('escondido');
-            });
-            
-            // Força o navegador a redesenhar para que a transição funcione
-            void secaoAlvo.offsetWidth;
+            // Adiciona a classe 'visivel' à seção alvo para exibi-la
+            secaoAlvo.classList.add('visivel');
 
-            // Remove a classe 'escondido' da seção alvo para mostrá-la
-            secaoAlvo.classList.remove('escondido');
+            // Rola a página para o topo, adicionando um comportamento suave
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     });
 });
