@@ -1,5 +1,5 @@
 @import url(/Styles/global.css);
-@import url(/Styles/layout.css);
-@import url(/Styles/colors.css);
-@import url(/Styles/fonts.css);
+@import url(/Styles/header.css);
+@import url(/Styles/main.css);
 @import url(/Styles/mobile.css);
+@import url(/Styles/variables.css);
