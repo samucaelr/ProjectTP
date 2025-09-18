@@ -1,7 +1,7 @@
 /* style.css */
 
 /* Importa as variáveis da pasta Styles */
-@import url('Styles/_variables.css');
+@import url('Styles/variables.css');
 /* Importa os estilos globais da pasta Styles */
 @import url('Styles/global.css');
 /* Importa os estilos de componentes da pasta Styles */
