@@ -1,4 +1,5 @@
 /* footer.css */
+@import url(_variables.css);
 
 footer {
     background-color: var(--cor-fundo);
