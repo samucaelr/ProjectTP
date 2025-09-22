@@ -1,5 +1,5 @@
 /* global.css */
-@import url(/style.css);
+@import url(_variables.css);
 
 * {
     margin: 0;
